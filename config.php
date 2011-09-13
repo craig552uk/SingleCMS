@@ -1,6 +1,13 @@
 <?php
 
 /**
+ * Site details
+ */
+$site_title = 'My Site';
+$site_author = 'Author';
+$site_description = 'Site Description';
+
+/**
  * Administrator account details
  */
 $username = 'admin';
