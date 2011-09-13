@@ -3,7 +3,7 @@
 /**
  * Site details
  */
-$site_title = 'My Site';
+$site_title = 'My Single CMS Site';
 $site_author = 'Author';
 $site_description = 'Site Description';
 
@@ -17,7 +17,7 @@ $password = 'passw0rd';
  * HTML tags allowed in content
  * All others are stripped from the text
  */
-$allowed_tags = '<p><a><strong><em><ul><ol><li><img>';
+$allowed_tags = '<h1><h2><h3><h4><h5><h6><p><a><strong><em><ul><ol><li><img><code><pre>';
 
 /**
  * System Messages
