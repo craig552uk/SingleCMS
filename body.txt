@@ -1,1 +1,2 @@
-    
+<p><strong>Welcome to Single CMS</strong></p>
+<p>Single CMS is a simple, safe, editor for a single web page.</p>
