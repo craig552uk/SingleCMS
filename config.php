@@ -20,6 +20,11 @@ $password = 'passw0rd';
 $allowed_tags = '<h1><h2><h3><h4><h5><h6><p><a><strong><em><ul><ol><li><img><code><pre>';
 
 /**
+ * Google Analytics tracking code
+ */
+$google_analytics_code = 'UA-XXXXX-X';
+
+/**
  * System Messages
  */
 $error_auth_failed = "Username/Password incorrect";
