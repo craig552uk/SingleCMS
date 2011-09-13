@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title><?php echo $site_title; ?> - Editor</title>
-    <link rel="stylesheet" href="../bootstrap-1.2.0.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-1.2.0.min.css">
 </head>
 <body>
     <div class="topbar">
@@ -30,7 +30,7 @@
                 <div class="clearfix">
                     <label for="content">Page Content</label>
                     <div class="input">
-                        <textarea name="content" id="content" style="width: 95%; height: 300px;"><?php echo $content; ?></textarea>
+                        <textarea name="content" id="content" style="width: 920px; height: 300px;"><?php echo $content; ?></textarea>
                         <p class="help-block">Allowed tags <em><?php echo htmlspecialchars($allowed_tags); ?></em></p>
                     </div>
                 </div>

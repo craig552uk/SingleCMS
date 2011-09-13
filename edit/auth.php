@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title><?php echo $site_title; ?> - Login</title>
-    <link rel="stylesheet" href="../bootstrap-1.2.0.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-1.2.0.min.css">
 </head>
 <body>
     <div class="topbar">
