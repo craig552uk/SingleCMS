@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>CMS</title>
+    <link rel="stylesheet" href="../bootstrap-1.2.0.min.css">
 </head>
 <body>
 
