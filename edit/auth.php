@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <title><?php echo $site_title; ?> - Login</title>
     <link rel="stylesheet" href="../css/bootstrap-1.2.0.min.css">
+    <script src="../js/jquery-1.6.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.alert-message').delay(2000).fadeOut();
+        });
+    </script>
 </head>
 <body>
     <div class="topbar">
@@ -20,9 +26,11 @@
     <div class="container" style="margin-top: 40px;">
         <form method="POST" action="?action=login">
             <fieldset>
-                <?php if(isset($login_error)): ?>
-                    <p class="alert-message error"><?php echo $login_error; ?></p>
-                <?php endif; ?>
+                <div class="clearfix">
+                    <?php if(isset($login_error)): ?>
+                        <p class="alert-message error"><?php echo $login_error; ?></p>
+                    <?php endif; ?>
+                </div>
                 <div class="clearfix">
                     <label for="username">User Name</label>
                     <div class="input">

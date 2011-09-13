@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <title><?php echo $site_title; ?> - Editor</title>
     <link rel="stylesheet" href="../css/bootstrap-1.2.0.min.css">
+    <script src="../js/jquery-1.6.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.alert-message').delay(2000).fadeOut();
+        });
+    </script>
 </head>
 <body>
     <div class="topbar">
@@ -21,12 +27,14 @@
     <div class="container" style="margin-top: 40px;">
         <form method="POST" action="?action=save" class="form-stacked">
             <fieldset>
-                <?php if(isset($editor_error)): ?>
-                    <p class="alert-message error"><?php echo $editor_error; ?></p>
-                <?php endif; ?>
-                <?php if(isset($editor_msg)): ?>
-                    <p class="alert-message success"><?php echo $editor_msg; ?></p>
-                <?php endif; ?>
+                <div class="clearfix">
+                    <?php if(isset($editor_error)): ?>
+                        <p class="alert-message error"><?php echo $editor_error; ?></p>
+                    <?php endif; ?>
+                    <?php if(isset($editor_msg)): ?>
+                        <p class="alert-message success"><?php echo $editor_msg; ?></p>
+                    <?php endif; ?>
+                </div>
                 <div class="clearfix">
                     <label for="content">Page Content</label>
                     <div class="input">
