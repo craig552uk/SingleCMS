@@ -15,7 +15,10 @@
             tinyMCE.init({
                 mode : "textareas",
                 theme : "advanced",
-                        
+                
+                // Styles applied within editor
+                content_css : "../css/bootstrap-1.2.0.min.css,../css/style.css",
+                
                 // Theme options - button# indicated the row# only
                 theme_advanced_buttons1 : "fontsizeselect,formatselect,bold,italic,underline,|,justifyleft,justifycenter,justifyright,|,forecolor,backcolor,|,bullist,numlist,|,outdent,indent,|,link,unlink,image,|,code,|,sub,sup,|,charmap,emotions",
                 theme_advanced_buttons2 : "",      
