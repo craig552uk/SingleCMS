@@ -13,6 +13,7 @@
     <meta name="description" content="<?php echo $site_description; ?>">
     <meta name="author" content="<?php echo $site_author; ?>">
 
+    <!-- Styles applied here should also be applied in TinyMCE editor /edit/editor.php ln 20 -->
     <link rel="stylesheet" href="css/bootstrap-1.2.0.min.css">
     <link rel="stylesheet" href="css/style.css">
 
