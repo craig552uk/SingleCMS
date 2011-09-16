@@ -20,8 +20,8 @@ if (isset($_GET['action'])) {
                 session_unset();
                 session_destroy();
                 break;
-            case 'save':            /* Save changes */
-                if (file_put_contents('../body.txt', strip_tags($_POST['content'], $allowed_tags))){
+            case 'save':            /* Save changes strip_tags($_POST['content'], $allowed_tags)*/
+                if (file_put_contents('../body.txt', $_POST['content'])){
                     $editor_msg = $editor_save_success;
                 }else{
                     $editor_error = $editor_save_error;

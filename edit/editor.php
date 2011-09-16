@@ -5,9 +5,26 @@
     <title><?php echo $site_title; ?> - Editor</title>
     <link rel="stylesheet" href="../css/bootstrap-1.2.0.min.css">
     <script src="../js/jquery-1.6.3.min.js"></script>
+    <script type="text/javascript" src="../js/tiny_mce/tiny_mce.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+            // Fade out alert messages
             $('.alert-message').delay(2000).fadeOut();
+            
+            // Tiny MCE Editor
+            tinyMCE.init({
+                mode : "textareas",
+                theme : "advanced",
+                        
+                // Theme options - button# indicated the row# only
+                theme_advanced_buttons1 : "fontsizeselect,formatselect,bold,italic,underline,|,justifyleft,justifycenter,justifyright,|,forecolor,backcolor,|,bullist,numlist,|,outdent,indent,|,link,unlink,image,|,code,|,sub,sup,|,charmap,emotions",
+                theme_advanced_buttons2 : "",      
+                theme_advanced_buttons3 : "",
+                theme_advanced_toolbar_location : "top",
+                theme_advanced_toolbar_align : "left",
+                theme_advanced_statusbar_location : "bottom",
+                theme_advanced_resizing : true
+            });
         });
     </script>
 </head>
@@ -36,10 +53,10 @@
                     <?php endif; ?>
                 </div>
                 <div class="clearfix">
-                    <label for="content">Page Content</label>
+                    <!--<label for="content">Page Content</label>-->
                     <div class="input">
-                        <textarea name="content" id="content" style="width: 920px; height: 300px;"><?php echo $content; ?></textarea>
-                        <p class="help-block">Allowed tags <em><?php echo htmlspecialchars($allowed_tags); ?></em></p>
+                        <textarea class="tinymce" name="content" id="content" style="width: 920px; height: 500px;"><?php echo $content; ?></textarea>
+                        <p class="help-block" style="max-width:100%;">Allowed tags <em><?php echo htmlspecialchars($allowed_tags); ?></em></p>
                     </div>
                 </div>
                 <div class="actions">

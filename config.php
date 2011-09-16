@@ -17,7 +17,7 @@ $password = 'passw0rd';
  * HTML tags allowed in content
  * All others are stripped from the text
  */
-$allowed_tags = '<h1><h2><h3><h4><h5><h6><p><a><strong><em><ul><ol><li><img><code><pre>';
+$allowed_tags = '<h1><h2><h3><h4><h5><h6><p><a><strong><em><ul><ol><li><img><code><pre><span><div><sup><sub>';
 
 /**
  * Google Analytics tracking code
