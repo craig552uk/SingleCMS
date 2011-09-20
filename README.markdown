@@ -3,9 +3,9 @@ Single CMS is a simple, safe, editor for a single web page.
 
 It allows a web designer to build a single page site, while allowing a client full control over the content.
 
-Author: Craig Russell [craig@craig-russell.co.uk](craig@craig-rusell.co.uk)
-Web: [craig-russell.co.uk](http://www.craig-russell.co.uk)
-Licence: MIT
+Author: Craig Russell [craig@craig-russell.co.uk](craig@craig-rusell.co.uk)    
+Web: [craig-russell.co.uk](http://www.craig-russell.co.uk)    
+Licence: MIT    
 
 ## Features ##
 *   Simple Easy to use interface
