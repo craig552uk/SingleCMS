@@ -1,0 +1,43 @@
+<?php
+/**
+ * SingleCMS en français
+ * Sauvegarder le fichier config.php original en le nommant config_ORIG.php par exemple
+ * Renommer ce fichier config.php et c'est fait !
+ */
+
+/**
+ * Site details
+ */
+$site_title = 'My Single CMS Site';
+$site_author = 'Author';
+$site_description = 'Site Description';
+$site_langage = 'fr'; // HTML "lang" attribute - Sample values : fr, it, de, ca...
+
+/**
+ * Administrator account details
+ */
+$username = 'admin';
+$password = 'passw0rd';
+
+/**
+ * HTML tags allowed in content
+ * All others are stripped from the text
+ */
+$allowed_tags = '<h1><h2><h3><h4><h5><h6><p><a><strong><em><ul><ol><li><img><code><pre><span><div><sup><sub>';
+
+/**
+ * Google Analytics tracking code
+ */
+$google_analytics_code = 'UA-XXXXX-X';
+
+/**
+ * System Messages
+ */
+$error_auth_failed = "Nom d'utilisateur ou mot de passe incorrecte";
+$editor_save_success = "Les modifications ont été enregistrées";
+$editor_save_error = "Les modifications ne peuvent être enregistrées";
+$editor_help_tags = "Tags autorisés";
+$editor_button_view = "Voir le site";
+$editor_button_logout = "Déconnexion";
+$editor_button_save = "Enregistrer";
+$editor_button_revert = "Abandonner";
