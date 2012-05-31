@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $site_langage; ?>">
 <head>
     <meta charset="utf-8">
     <title><?php echo $site_title; ?> - Editor</title>
@@ -37,8 +37,8 @@
             <div class="container">
                 <h3><a href="../"><?php echo $site_title; ?></a></h3>
                 <ul class="nav secondary-nav">
-                    <li><a href="../"><?php echo $editor_button_view ?></a></li>
-                    <li><a href="?action=logout"><?php echo $editor_button_logout ?></a></li>
+                    <li><a href="../"><?php echo $editor_button_view; ?></a></li>
+                    <li><a href="?action=logout"><?php echo $editor_button_logout; ?></a></li>
                 </ul>
             </div><!-- .container -->
         </div><!-- .topbar-inner-->
@@ -59,12 +59,12 @@
                     <!--<label for="content">Page Content</label>-->
                     <div class="input">
                         <textarea class="tinymce" name="content" id="content" style="width: 920px; height: 500px;"><?php echo $content; ?></textarea>
-                        <p class="help-block" style="max-width:100%;"><?php echo $editor_help_tags ?> <em><?php echo htmlspecialchars($allowed_tags); ?></em></p>
+                        <p class="help-block" style="max-width:100%;"><?php echo $editor_help_tags; ?> <em><?php echo htmlspecialchars($allowed_tags); ?></em></p>
                     </div>
                 </div>
                 <div class="actions">
                     <input type="submit" class="btn primary" value="<?php echo $editor_button_save ?>">
-                    <a href="." class="btn"><?php echo $editor_button_revert ?></a>
+                    <a href="." class="btn"><?php echo $editor_button_revert; ?></a>
                 </div>
             </fieldset>
         </form>

@@ -6,6 +6,7 @@
 $site_title = 'My Single CMS Site';
 $site_author = 'Author';
 $site_description = 'Site Description';
+$site_langage = 'en'; // HTML "lang" attribute - Sample values : fr, it, de, ca...
 
 /**
  * Administrator account details
