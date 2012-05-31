@@ -30,4 +30,9 @@ $google_analytics_code = 'UA-XXXXX-X';
 $error_auth_failed = "Username/Password incorrect";
 $editor_save_success = "Changes Saved";
 $editor_save_error = "Changes could not be saved";
+$editor_help_tags = "Allowed tags";
+$editor_button_view = "View Site";
+$editor_button_logout = "Logout";
+$editor_button_save = "Save Changes";
+$editor_button_revert = "Revert";
 
