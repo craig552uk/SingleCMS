@@ -17,12 +17,12 @@
             <div class="container">
                 <h3><a href="../"><?php echo $site_title; ?></a></h3>
                 <ul class="nav secondary-nav">
-                    <li><a href="../">View Site</a></li>
+                    <li><a href="../"><?php echo $editor_button_view; ?></a></li>
                 </ul>
             </div><!-- .container -->
         </div><!-- .topbar-inner-->
     </div><!-- .topbar-->
-    
+
     <div class="container" style="margin-top: 40px;">
         <form method="POST" action="?action=login">
             <fieldset>
@@ -32,20 +32,20 @@
                     <?php endif; ?>
                 </div>
                 <div class="clearfix">
-                    <label for="username">User Name</label>
+                    <label for="username"><?php echo $editor_login_name; ?></label>
                     <div class="input">
                         <input type="text" name="username" id="username">
                     </div>
                 </div>
                 <div class="clearfix">
-                    <label for="password">Password</label>
+                    <label for="password"><?php echo $editor_login_password; ?></label>
                     <div class="input">
                         <input type="password" name="password" id="password">
                     </div>
                 </div>
                 <div class="actions">
-                    <input type="submit" class="btn primary" value="Login">
-                    <a href="../" class="btn">Cancel</a>
+                    <input type="submit" class="btn primary" value="<?php echo $editor_login_login; ?>">
+                    <a href="../" class="btn"><?php echo $editor_button_cancel; ?></a>
                 </div>
             </fieldset>
         </form>
