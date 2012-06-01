@@ -6,6 +6,7 @@
 $site_title = 'My Single CMS Site';
 $site_author = 'Author';
 $site_description = 'Site Description';
+$site_langage = 'en'; // HTML "lang" attribute - Sample values : fr, it, de, ca...
 
 /**
  * Administrator account details
@@ -30,9 +31,12 @@ $google_analytics_code = 'UA-XXXXX-X';
 $error_auth_failed = "Username/Password incorrect";
 $editor_save_success = "Changes Saved";
 $editor_save_error = "Changes could not be saved";
+$editor_login_name = "User Name";
+$editor_login_password = "Password";
+$editor_login_login ="Login";
 $editor_help_tags = "Allowed tags";
 $editor_button_view = "View Site";
 $editor_button_logout = "Logout";
 $editor_button_save = "Save Changes";
 $editor_button_revert = "Revert";
-
+$editor_button_cancel = "Cancel";
