@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title><?php echo $site_title; ?> - Editor</title>
-    <link rel="stylesheet" href="../css/bootstrap-1.2.0.min.css">
-    <script src="../js/jquery-1.6.3.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript" src="../js/tiny_mce/tiny_mce.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){

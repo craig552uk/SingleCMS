@@ -14,11 +14,11 @@
     <meta name="author" content="<?php echo $site_author; ?>">
 
     <!-- Styles applied here should also be applied in TinyMCE editor /edit/editor.php ln 20 -->
-    <link rel="stylesheet" href="css/bootstrap-1.2.0.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/modernizr-2.0.6.min.js"></script>
-    <script src="js/jquery-1.6.3.min.js"></script>
+    <script src="js/jquery-1.7.2.min.js"></script>
 </head>
 
 <body>
