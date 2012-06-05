@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title><?php echo $site_title; ?> - Editor</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script src="../jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="../tiny_mce/tiny_mce.js"></script>
+    <script src="../js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../js/tiny_mce/tiny_mce.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             // Fade out alert messages
-            $('.alert-message').delay(2000).fadeOut();
+            $('.alert').delay(2000).fadeOut();
 
             // Tiny MCE Editor
             tinyMCE.init({
