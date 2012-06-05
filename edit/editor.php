@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title><?php echo $site_title; ?> - Editor</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <script src="../js/jquery-1.7.2.min.js"></script>
-    <script type="text/javascript" src="../js/tiny_mce/tiny_mce.js"></script>
+    <script src="../jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="../tiny_mce/tiny_mce.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             // Fade out alert messages
@@ -36,9 +36,9 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <a class="brand" href="../../"><?php echo $site_title; ?></a>
+                <a class="brand" href="../"><?php echo $site_title; ?></a>
                 <ul class="nav pull-right">
-                    <li><a href="../../"><?php echo $editor_button_view; ?></a></li>
+                    <li><a href="../"><?php echo $editor_button_view; ?></a></li>
                     <li><a href="?action=logout"><?php echo $editor_button_logout; ?></a></li>
                 </ul>
             </div><!-- .container -->
