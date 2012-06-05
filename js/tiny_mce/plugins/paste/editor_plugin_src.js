@@ -27,7 +27,7 @@
 			paste_text_sticky : false,
 			paste_text_sticky_default : false,
 			paste_text_notifyalways : false,
-			paste_text_linebreaktype : "p",
+			paste_text_linebreaktype : "combined",
 			paste_text_replacements : [
 				[/\u2026/g, "..."],
 				[/[\x93\x94\u201c\u201d]/g, '"'],
@@ -359,7 +359,7 @@
 			}
 
 			// IE9 adds BRs before/after block elements when contents is pasted from word or for example another browser
-			if (tinymce.isIE && document.documentMode >= 9) {
+			if (tinymce.isIE && document.documentMode >= 9 && /<(h[1-6r]|p|div|address|pre|form|table|tbody|thead|tfoot|th|tr|td|li|ol|ul|caption|blockquote|center|dl|dt|dd|dir|fieldset)/.test(o.content)) {
 				// IE9 adds BRs before/after block elements when contents is pasted from word or for example another browser
 				process([[/(?:<br>&nbsp;[\s\r\n]+|<br>)*(<\/?(h[1-6r]|p|div|address|pre|form|table|tbody|thead|tfoot|th|tr|td|li|ol|ul|caption|blockquote|center|dl|dt|dd|dir|fieldset)[^>]*>)(?:<br>&nbsp;[\s\r\n]+|<br>)*/g, '$1']]);
 
@@ -805,14 +805,24 @@
 
 				// Treat paragraphs as specified in the config
 				if (linebr == "none") {
+					// Convert all line breaks to space
 					process([
 						[/\n+/g, " "]
 					]);
 				} else if (linebr == "br") {
+					// Convert all line breaks to <br />
 					process([
 						[/\n/g, "<br />"]
 					]);
+				} else if (linebr == "p") {
+					// Convert all line breaks to <p>...</p>
+					process([
+						[/\n+/g, "</p><p>"],
+						[/^(.*<\/p>)(<p>)$/, '<p>$1']
+					]);
 				} else {
+					// defaults to "combined"
+					// Convert single line breaks to <br /> and double line breaks to <p>...</p>
 					process([
 						[/\n\n/g, "</p><p>"],
 						[/^(.*<\/p>)(<p>)$/, '<p>$1'],
