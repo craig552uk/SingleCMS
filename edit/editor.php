@@ -13,11 +13,12 @@
 
             // Tiny MCE Editor
             tinyMCE.init({
+            	language : "<?php echo $site_langage; ?>", // change language
                 mode : "textareas",
                 theme : "advanced",
 
                 // Styles applied within editor
-                content_css : "../css/bootstrap-1.2.0.min.css,../css/style.css",
+                content_css : "../css/bootstrap.min.css,../css/style.css",
 
                 // Theme options - button# indicated the row# only
                 theme_advanced_buttons1 : "fontsizeselect,formatselect,bold,italic,underline,|,justifyleft,justifycenter,justifyright,|,forecolor,backcolor,|,bullist,numlist,|,outdent,indent,|,link,unlink,image,|,code,|,sub,sup,|,charmap,emotions",
@@ -32,38 +33,38 @@
     </script>
 </head>
 <body>
-    <div class="topbar">
-        <div class="topbar-inner">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
             <div class="container">
-                <h3><a href="../"><?php echo $site_title; ?></a></h3>
-                <ul class="nav secondary-nav">
-                    <li><a href="../"><?php echo $editor_button_view; ?></a></li>
+                <a class="brand" href="../../"><?php echo $site_title; ?></a>
+                <ul class="nav pull-right">
+                    <li><a href="../../"><?php echo $editor_button_view; ?></a></li>
                     <li><a href="?action=logout"><?php echo $editor_button_logout; ?></a></li>
                 </ul>
             </div><!-- .container -->
-        </div><!-- .topbar-inner-->
-    </div><!-- .topbar-->
+        </div><!-- .navbar-inner-->
+    </div><!-- .navpbar-->
 
-    <div class="container" style="margin-top: 40px;">
-        <form method="POST" action="?action=save" class="form-stacked">
+    <div class="container" style="margin-top: 80px;">
+        <form method="POST" action="?action=save">
             <fieldset>
                 <div class="clearfix">
                     <?php if(isset($editor_error)): ?>
-                        <p class="alert-message error"><?php echo $editor_error; ?></p>
+                        <p class="alert alert-error"><?php echo $editor_error; ?></p>
                     <?php endif; ?>
                     <?php if(isset($editor_msg)): ?>
-                        <p class="alert-message success"><?php echo $editor_msg; ?></p>
+                        <p class="alert alert-success"><?php echo $editor_msg; ?></p>
                     <?php endif; ?>
                 </div>
                 <div class="clearfix">
                     <!--<label for="content">Page Content</label>-->
                     <div class="input">
                         <textarea class="tinymce" name="content" id="content" style="width: 920px; height: 500px;"><?php echo $content; ?></textarea>
-                        <p class="help-block" style="max-width:100%;"><?php echo $editor_help_tags; ?> <em><?php echo htmlspecialchars($allowed_tags); ?></em></p>
+                        <p style="max-width:100%; margin-top:4px; font-size:90%; color:#999;"><?php echo $editor_help_tags; ?> : <?php echo htmlspecialchars($allowed_tags); ?></p>
                     </div>
                 </div>
-                <div class="actions">
-                    <input type="submit" class="btn primary" value="<?php echo $editor_button_save ?>">
+                <div class="form-actions" style="text-align:right;">
+                    <input type="submit" class="btn btn-primary" value="<?php echo $editor_button_save; ?>">
                     <a href="." class="btn"><?php echo $editor_button_revert; ?></a>
                 </div>
             </fieldset>
