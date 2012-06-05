@@ -3,27 +3,27 @@
 <head>
     <meta charset="utf-8">
     <title><?php echo $site_title; ?> - Login</title>
-    <link rel="stylesheet" href="../css/bootstrap-1.2.0.min.css">
-    <script src="../js/jquery-1.6.3.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-1.7.2.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $('.alert-message').delay(2000).fadeOut();
+            $('.alert').delay(2000).fadeOut();
         });
     </script>
 </head>
 <body>
-    <div class="topbar">
-        <div class="topbar-inner">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
             <div class="container">
-                <h3><a href="../"><?php echo $site_title; ?></a></h3>
-                <ul class="nav secondary-nav">
+                <a class="brand" href="../"><?php echo $site_title; ?></a>
+                <ul class="nav pull-right">
                     <li><a href="../"><?php echo $editor_button_view; ?></a></li>
                 </ul>
             </div><!-- .container -->
-        </div><!-- .topbar-inner-->
-    </div><!-- .topbar-->
+        </div><!-- .navbar-inner-->
+    </div><!-- .navpbar-->
 
-    <div class="container" style="margin-top: 40px;">
+    <div class="container" style="margin-top: 80px;">
         <form method="POST" action="?action=login">
             <fieldset>
                 <div class="clearfix">
@@ -43,7 +43,7 @@
                         <input type="password" name="password" id="password">
                     </div>
                 </div>
-                <div class="actions">
+                <div>
                     <input type="submit" class="btn primary" value="<?php echo $editor_login_login; ?>">
                     <a href="../" class="btn"><?php echo $editor_button_cancel; ?></a>
                 </div>
