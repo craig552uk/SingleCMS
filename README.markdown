@@ -17,8 +17,9 @@ Licence: MIT
 ## Getting Started ##
 1.  Unpack the zip file on to your PHP server
 2.  Make `body.txt` writeable by your web server
-3.  Define the basic settings in `config.php`
-4.  That's it!
+3.  Define language and basic settings in `config.php`
+4.  Download your language files at http://www.tinymce.com/i18n3x/index.php?ctrl=lang&act=download&pr_id=1 and extract the contents of tinymce_language_pack.zip/tinymce_language_pack/ (which should contain folders "langs", "plugins", and "themes") into js/tiny_mce/.
+5.  That's it!
 
 Edit and style `index.php` however you want. Use the php snippets to insert the content wherever you want.
 
