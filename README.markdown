@@ -7,6 +7,9 @@ Author: Craig Russell [craig@craig-russell.co.uk](craig@craig-rusell.co.uk)
 Web: [craig-russell.co.uk](http://www.craig-russell.co.uk)    
 Licence: MIT    
 
+##Update [Jan 2014]
+I've not updated this project in a while, and never use it myself anymore. However, it does still get a moderate amount of interest. If anyone whould like to take ownership of this project (perhaps to develop it further) please do get in touch.
+
 ## Features ##
 *   Simple Easy to use interface
 *   Secure Control which tags are permitted in page content
